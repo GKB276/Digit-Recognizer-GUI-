@@ -7,10 +7,6 @@ from tkinter import ttk, filedialog
 import sys
 import os
 
-if hasattr(sys, 'frozen'):
-    sys.stdout = open(os.devnull, 'w')
-    sys.stderr = open(os.devnull, 'w')
-
 #File path
 def browse_file():
     file_path = filedialog.askopenfilename(
